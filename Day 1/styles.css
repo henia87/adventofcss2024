@@ -1,0 +1,81 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-bottom: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container img {
+    border-radius: 25px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container.five-plus {
+    position: relative;
+}
+
+.container.five-plus > div:nth-of-type(5) {
+    position: relative;
+}
+
+.container.five-plus > div:nth-of-type(5) .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: white;
+    font-size: 64pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.container:has(> div:nth-child(1)):not(:has(> div:nth-child(2))) img {
+    height: 600px;
+}
+
+.container:has(> div:nth-child(1)) > div:nth-child(1) {
+    grid-column: span 6;
+}
+
+.container:has(> div:nth-child(2)):not(:has(> div:nth-child(3))) img {
+    height: 600px;
+}
+
+.container:has(> div:nth-child(2)) > div:nth-child(1), .container:has(> div:nth-child(2)) > div:nth-child(2) {
+    grid-column: span 3;
+}
+
+.container:has(> div:nth-child(3)) > div:nth-child(1), .container:has(> div:nth-child(3)) > div:nth-child(2) {
+    grid-column: span 3;
+}
+
+.container:has(> div:nth-child(3)) > div:nth-child(3) {
+    grid-column: span 6;
+}
+
+.container:has(> div:nth-child(4)) > div:nth-child(1), .container:has(> div:nth-child(4)) > div:nth-child(2), .container:has(> div:nth-child(4)) > div:nth-child(3), .container:has(> div:nth-child(4)) > div:nth-child(4) {
+    grid-column: span 3;
+}
+
+.container:has(> div:nth-child(5)) > div:nth-child(1), .container:has(> div:nth-child(5)) > div:nth-child(2) {
+    grid-column: span 3;
+}
+
+.container:has(> div:nth-child(5)) > div:nth-child(3), .container:has(> div:nth-child(5)) > div:nth-child(4), .container:has(> div:nth-child(5)) > div:nth-child(5) {
+    grid-column: span 2;
+}
+
