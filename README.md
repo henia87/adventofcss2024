@@ -14,3 +14,6 @@ Challenge #2: CSS only toggle button
 Challenge #3: CSS only tooltip
 
 Challenge #4: Heading with lines on both sides
+
+Challenge #5: Footer revealed on scroll
+(I used this blog post as a guide: https://www.hongkiat.com/blog/css-only-on-scroll-reveal/)
