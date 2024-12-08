@@ -17,3 +17,6 @@ Challenge #4: Heading with lines on both sides
 
 Challenge #5: Footer revealed on scroll
 (I used this blog post as a guide: https://www.hongkiat.com/blog/css-only-on-scroll-reveal/)
+
+Challenge #6: Scroll indicator
+(I followed this blog post: https://dev.to/chokcoco/amazing-pure-css-scrolling-indicator-effect-5eja)
